@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5792126551266211491}
   - component: {fileID: 5792126551266211490}
   - component: {fileID: 5792126551266211489}
+  - component: {fileID: 1698698261}
   m_Layer: 0
   m_Name: Allen
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5792126551266211489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -133,3 +134,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.971139, y: 0.9539211}
   m_EdgeRadius: 0
+--- !u!114 &1698698261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792126551266211488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81647d461af6334184cf3cec26d1ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10

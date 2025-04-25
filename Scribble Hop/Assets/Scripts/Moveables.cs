@@ -4,39 +4,27 @@ using UnityEngine;
 
 public class Moveables : MonoBehaviour
 {
-    public Transform Moveable;
-    public Transform startPoint;
-    public Transform endPoint;
-    public float speed = 1.5f;
+    public float moveDistance = 3f; 
+    public float speed = 2f;
 
-    int direction = 1;
-   
-    // Update is called once per frame
-    private void Update()
+    private Vector3 startPoint;
+    private Vector3 endPoint;
+    private Vector3 target;
+
+    void Start()
     {
-        Vector2 target = currentMovementTarget();
-
-        Moveable.position=Vector2.Lerp(Moveable.position,target, speed * Time.deltaTime);
+        startPoint = transform.position;
+        endPoint = startPoint + new Vector3(moveDistance, 0f, 0f); 
+        target = endPoint;
     }
 
-    Vector2 currentMovementTarget()
+    void Update()
     {
-        if (direction == 1)
-        {
-            return startPoint.position;
-        }
-        else
-        {
-            return endPoint.position;
-        }
-    }
+        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
-    private void OnDrawGizmos()
-    {
-        if(Moveable!=null && startPoint!=null && endPoint !=null)
+        if (Vector3.Distance(transform.position, target) < 0.1f)
         {
-            Gizmos.DrawLine(Moveable.transform.position, startPoint.position);
-            Gizmos.DrawLine(Moveable.transform.position, endPoint.position);
+            target = target == endPoint ? startPoint : endPoint;
         }
     }
 }

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 662415699186051079}
   - component: {fileID: 662415699186051078}
   - component: {fileID: 662415699186051077}
-  - component: {fileID: 662415699186051072}
   - component: {fileID: 7003074101153563699}
+  - component: {fileID: 894198807011296886}
   m_Layer: 0
   m_Name: Bouncepad
   m_TagString: Untagged
@@ -103,25 +103,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.15625475, y: 0.21666986}
-  - {x: 0.15586314, y: 0.2157586}
+  - {x: -0.15534925, y: 0.17833999}
+  - {x: 0.1594851, y: 0.18016656}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &662415699186051072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662415699186051076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb91984657806984f8b2c8f5b4c9e754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 10
 --- !u!251 &7003074101153563699
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -141,3 +128,16 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &894198807011296886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662415699186051076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5110d0749b8dd4a9fb7a807ecb5636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 10
