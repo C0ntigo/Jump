@@ -171,10 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 303731bfc593f0745b32b493655b07a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPaused: 0
   moveDistance: 3.28
   speed: 4.15
-  normalSpeed: 4.15
 --- !u!68 &8863211825079907022
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -193,7 +191,7 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.13281898, y: 0.1375723}
   - {x: -0.1013147, y: 0.13394749}
-  - {x: 0.15978645, y: 0.14889163}
+  - {x: 0.15797116, y: 0.13846518}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
